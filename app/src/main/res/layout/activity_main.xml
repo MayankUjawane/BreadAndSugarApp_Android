@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CC9FF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="321dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="20dp"
+        android:background="#3C3F41"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/final_logo_bread_n_sugar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="WELCOME !"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="46sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="WELCOME !" />
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:text="PRIORITY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="190dp"
+            android:autoText="false"
+            android:background="#3C3F41"
+            android:paddingLeft="15dp"
+            android:shadowColor="#FFFFFF"
+            android:text="LOVE AT FIRST BITE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#EAFF8D"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/viewMenu"
+        android:layout_width="131dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="viewMenu"
+        android:text="View Menu"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Your safety is our"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

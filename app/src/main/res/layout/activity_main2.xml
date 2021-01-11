@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CC9FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="MENU"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cakes"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="cakes"
+            android:text="CAKES"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#B60034"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/doughnut"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doughnut"
+            android:text="DOUGHNUT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#B60034"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/muffins"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="muffins"
+            android:text="MUFFINS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#B60034"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8CC9FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="282dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/choco_truffle_cake" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0"
+                        android:background="#aaa"
+                        android:onClick="cake1"
+                        android:text="RECIPE"
+                        android:textSize="30sp"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Choco Truffle Cake"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="  • Chocolate"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="  • Vanilla"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="  • Contains Egg"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="282dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/strawberry_cake" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0"
+                        android:background="#aaa"
+                        android:onClick="cake2"
+                        android:text="RECIPE"
+                        android:textSize="30sp"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Strawberry Cake"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="  • Strawberries"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="  • Contains Egg"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
